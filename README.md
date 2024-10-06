@@ -15,10 +15,11 @@ print(func(2))
 ```
 
 
-a) 6  
-b) 8  
-c) 9  
-d) 16  
+a) `[1], [1, 2]`  
+b) `[1], [2]`  
+c) `1, 2`  
+d) `Error`
+  
 
 ---
 
@@ -438,3 +439,98 @@ Write a Python program that:
 
 ---
 
+
+### Extra Questions
+---
+
+### **1. Problem: The Warehouse Inventory Tracker**
+
+**Story:**  
+You’ve been hired by a warehouse that stores products in different sections, and each section has its own inventory matrix. Each row of the matrix represents a product category, and each column represents a specific day of the week, showing the number of products sold on that day.
+
+The warehouse manager needs a program that can:
+1. Update the inventory matrix by adding new sales data for each day.
+2. Calculate the total sales for each product category at the end of the week.
+3. Identify the day with the highest sales across all categories.
+
+**Task:**  
+Write a Python program that:
+1. Takes a matrix where each row represents a product category and each column represents sales data for a specific day of the week.
+2. Allows the user to add daily sales data for each product category.
+3. Calculates and prints the total sales for each product category at the end of the week.
+4. Identifies the day with the highest sales across all product categories.
+
+**Additional Challenge:**
+- Allow the manager to input new sales data for a specific product category and day, updating the matrix dynamically.
+- Identify the product category with the highest total sales for the week.
+
+**Example Input:**
+
+- Initial sales matrix for 3 product categories over 7 days:
+
+```python
+sales_matrix = [
+    [20, 15, 30, 25, 10, 0, 5],  # Category 1
+    [5, 10, 15, 20, 25, 30, 35],  # Category 2
+    [12, 14, 18, 16, 19, 11, 9]   # Category 3
+]
+```
+
+**Example Actions:**  
+- Add new sales data for Day 5 in Category 1.
+- Calculate total weekly sales for each category.
+- Identify the day with the highest sales across all categories.
+
+**Output:**
+- Total sales for each product category.
+- The day with the highest sales across all categories.
+- The category with the highest weekly sales.
+
+---
+
+### **2. Problem: The Terrain Elevation Map Analyzer**
+
+**Story:**  
+You are working with a team of geologists who are studying a 2D grid of terrain elevation data. The elevation of each part of the terrain is stored in a matrix where each element represents the height at a specific point.
+
+Your job is to write a program that:
+1. Analyzes the elevation matrix to find the highest and lowest points in the terrain.
+2. Calculates the average elevation of the terrain.
+3. Identifies if any parts of the terrain form a "flat area" (where all the heights in a subregion are the same).
+
+**Task:**  
+Write a Python program that:
+1. Takes a matrix of terrain elevations (each element represents the height at that point).
+2. Identifies the highest and lowest points in the matrix.
+3. Calculates the average elevation of the entire terrain.
+4. Determines if there’s a subregion (2x2 or larger) in the matrix where all points have the same elevation (a "flat area").
+
+**Additional Challenge:**
+- Allow the user to input custom dimensions for the subregion (e.g., 3x3 or 4x4) to check for flat areas.
+- Allow the user to update the elevation matrix dynamically by inputting new elevation values for specific points.
+
+**Example Input:**
+
+- Initial terrain elevation matrix (5x5 grid):
+
+```python
+elevation_matrix = [
+    [150, 160, 165, 155, 170],
+    [140, 165, 170, 165, 160],
+    [130, 135, 140, 145, 150],
+    [160, 155, 150, 140, 135],
+    [170, 165, 160, 155, 150]
+]
+```
+
+**Example Actions:**  
+- Identify the highest and lowest points in the terrain.
+- Calculate the average elevation.
+- Check if any 2x2 subregions are flat.
+
+**Output:**
+- The highest point and lowest point in the matrix.
+- The average elevation.
+- Whether any flat subregions exist.
+
+---

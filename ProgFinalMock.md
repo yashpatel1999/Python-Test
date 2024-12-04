@@ -224,3 +224,183 @@ c) It is the same as `.reverse()`.
 d) It works only for strings.  
 
 ---
+#### **Part B: Find the Output (15 Questions)**  
+
+---
+
+**Q1.** What is the output of the following code?  
+```python
+for i in range(1, 4):
+    for j in range(1, i + 1):
+        print(i * j, end=" ")
+    print()
+```  
+
+---
+
+**Q2.** What is the output of this snippet?  
+```python
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+result = []
+for i in range(len(matrix)):
+    result.append(matrix[i][i])
+print(result)
+```  
+
+---
+
+**Q3.** What will this code print?  
+```python
+f = open("output.txt", "w")
+f.write("Hello\nWorld")
+f.close()
+
+f = open("output.txt", "r")
+lines = f.readlines()
+print(lines)
+f.close()
+```  
+
+---
+
+**Q4.** What is the output of this code?  
+```python
+x = [10, 20, 30]
+y = []
+for n in x:
+    row = []
+    for i in range(1, 4):
+        row.append(n * i)
+    y.append(row)
+print(y[1][2])
+```  
+
+---
+
+**Q5.** What will this nested loop print?  
+```python
+for i in range(2):
+    for j in range(2, 4):
+        print(i, "-", j)
+```  
+
+---
+
+**Q6.** What does the following code produce?  
+```python
+x = 3.14159
+formatted = "{:.2f}".format(x)
+print("The value is", formatted)
+```  
+
+---
+
+**Q7.** What will this file handling code print?  
+```python
+with open("test.txt", "w") as f:
+    f.write("Python\nProgramming")
+
+with open("test.txt", "r") as f:
+    lines = f.read().splitlines()
+    print(lines)
+```  
+
+---
+
+**Q8.** What is the output of this code?  
+```python
+matrix = [[0, 1], [2, 3], [4, 5]]
+transposed = []
+for i in range(len(matrix[0])):
+    row = []
+    for row_vals in matrix:
+        row.append(row_vals[i])
+    transposed.append(row)
+print(transposed)
+```  
+
+---
+
+**Q9.** Predict the output:  
+```python
+for i in range(1, 6):
+    stars = "*" * i
+    print(stars)
+```  
+
+---
+
+**Q10.** What is the output of this snippet?  
+```python
+word = "python"
+padded = "-" * 2 + word + "-" * 2
+print(padded)
+```  
+
+---
+
+**Q11.** What will this print?  
+```python
+for i in range(3):
+    for j in range(3):
+        if i == j:
+            break
+        print(i, j, end=" | ")
+```  
+
+---
+
+**Q12.** What is the output?  
+```python
+fruits = ["apple", "banana", "cherry"]
+prices = [100, 200, 150]
+combined = {}
+for i in range(len(fruits)):
+    combined[fruits[i]] = prices[i]
+print(combined)
+```  
+
+---
+
+**Q13.** What does this produce?  
+```python
+file_content = "a,b,c\nd,e,f\ng,h,i"
+with open("file.csv", "w") as f:
+    f.write(file_content)
+
+with open("file.csv", "r") as f:
+    for line in f:
+        print(line.strip())
+```  
+
+---
+
+**Q14.** What is the output of this nested list code?  
+```python
+result = []
+for i in range(4):
+    inner = []
+    for j in range(i):
+        inner.append(j)
+    result.append(inner)
+print(result)
+```  
+
+---
+
+**Q15.** What does this produce?  
+```python
+for i in range(1, 4):
+    print("Row", i, ":", end=" ")
+    for j in range(i):
+        print("(", i, ",", j, ")", end=" ")
+    print()
+```  
+
+---
+
+This updated version uses simpler syntax and focuses on clarity while retaining the challenge. Let me know if you need more adjustments!

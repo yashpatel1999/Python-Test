@@ -404,3 +404,96 @@ for i in range(1, 4):
 ---
 
 This updated version uses simpler syntax and focuses on clarity while retaining the challenge. Let me know if you need more adjustments!
+
+Here's a more challenging and interesting version of the exam questions, making them trickier by adding more constraints, deeper logical steps, and more engaging real-world applications:
+
+---
+
+**Part C: Code Writing (40 points)**
+
+
+**Question 1:**
+You are given a list of transaction records stored as strings in the format `"Date, Description, Amount"`. Write a function that:
+1. Parses the input and extracts the total transaction amount.
+2. Calculates the highest transaction amount and the lowest transaction amount along with their corresponding descriptions.
+3. If a transaction description contains the word "refund," it should be considered a negative amount, and all refunds should be subtracted from the total. If a description contains the word "bonus," it should be considered a positive boost (double the amount).
+4. If any transaction exceeds $1000, apply a 5% tax on the amount and adjust the total.
+5. After calculating, print the total transaction amount, the highest transaction, the lowest transaction, and the adjusted amount if applicable.
+
+**Example Input:**
+```python
+transactions = [
+    "2024-12-01, Grocery, 50",
+    "2024-12-02, Refund, -10",
+    "2024-12-03, Electronics, 2000",
+    "2024-12-04, Bonus, 300",
+    "2024-12-05, Refund, -20"
+]
+```
+
+**Question 2:**
+You are given a text file `orders.txt` that contains multiple lines, each representing an order with the following format:
+```
+OrderID, Product, Quantity, Price
+```
+Write a function that:
+1. Opens the file and reads its content.
+2. Finds and replaces all occurrences of the word "OldProduct" with "NewProduct".
+3. Saves the modified content back to the same file.
+4. Ensure that after modification, all lines where `Quantity` is more than 10 are printed to the console.
+
+**Example Content in `orders.txt`:**
+```
+123, OldProduct, 5, 10
+456, OldProduct, 15, 20
+789, NewProduct, 10, 30
+```
+
+**Expected Output (in Console after replacement):**
+```
+456, NewProduct, 15, 20
+```
+
+---
+
+**Combined Question: 3**
+
+**Story:**  
+You are designing a system for an e-commerce platform that tracks product sales and stock levels across multiple warehouses. The system stores data in a matrix where each row represents a warehouse, and each column represents a product. You also store product information in a dictionary with the product's name, price, and a stock threshold (the minimum number of units that should remain in stock).
+
+Write a function that:
+1. Converts the sales data matrix to total revenue (quantity sold * product price) for each warehouse. Each cell in the matrix represents the number of units sold of a product in a warehouse.
+2. Updates the stock levels for each product in each warehouse. After sales, decrease the stock based on the number of units sold, and check if any product's stock falls below the threshold. If it does, print a message saying that product needs restocking.
+3. If a product's stock across all warehouses falls below the threshold, add it to a list of products needing restocking.
+4. Create a new dictionary with products that need restocking and their total stock across all warehouses.
+
+**Example Input:**
+
+```python
+sales_matrix = [
+    [20, 15, 30],  # Warehouse 1
+    [50, 40, 25],  # Warehouse 2
+    [30, 35, 10]   # Warehouse 3
+]
+
+products = {
+    "Laptop": {"price": 1000, "threshold": 30, "stock": 50},
+    "Smartphone": {"price": 500, "threshold": 20, "stock": 70},
+    "Headphones": {"price": 100, "threshold": 10, "stock": 20}
+}
+```
+
+**Expected Output:**
+```
+Revenue for each warehouse:
+[50000, 65000, 32000]
+
+Products needing restocking:
+Laptop, Headphones
+
+Products with total stock below threshold:
+Headphones - Total Stock: 20
+Laptop - Total Stock: 50
+```
+
+---

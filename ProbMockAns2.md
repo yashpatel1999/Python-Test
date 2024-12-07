@@ -127,3 +127,99 @@ From standard normal tables, \( P(Z \geq 1.39) = 1 - P(Z \leq 1.39) \approx 1 - 
 - (a) \( p = 0.7 \)
 - (b) Expected value = \( 21 \), Standard deviation = \( 2.51 \)
 - (c) \( P(X \geq 25) \approx 0.0823 \) or 8.23%
+
+### Solution 3:
+
+#### Given:
+- Total seating capacity: \( 35 \)
+- Probability of showing up (\(p\)) = \( 1 - 0.15 = 0.85 \)
+- Number of reservations (\(n\)) depends on the specific part of the question.
+
+---
+
+### (a) Probability that fewer than 35 people show up when \( n = 35 \):
+Let \( N \sim \text{Binomial}(n = 35, p = 0.85) \). We calculate \( P(N < 35) = 1 - P(N = 35) \).
+
+- **\( P(N = 35) \):**
+\[
+P(N = 35) = \binom{35}{35} \cdot (0.85)^{35} \cdot (1 - 0.85)^0 = (0.85)^{35}
+\]
+Using a calculator:
+\[
+P(N = 35) \approx (0.85)^{35} \approx 0.0161
+\]
+
+- **\( P(N < 35) \):**
+\[
+P(N < 35) = 1 - P(N = 35) = 1 - 0.0161 = 0.9839
+\]
+
+Thus, the probability that fewer than 35 guests show up is approximately:
+\[
+P(N < 35) \approx 0.9839 \, \text{or } 98.39\%.
+\]
+
+---
+
+### (b) Number of reservations to ensure the expected number of attendees equals 35:
+The expected number of attendees is given by:
+\[
+E(N) = n \cdot p
+\]
+Set \( E(N) = 35 \):
+\[
+35 = n \cdot 0.85 \implies n = \frac{35}{0.85} \approx 41.18
+\]
+
+Since the number of reservations must be an integer, the hall should accept **42 reservations** to ensure the expected number of attendees equals or exceeds 35.
+
+---
+
+### (c) Probability that fewer than 35 people show up when \( n = 42 \):
+Let \( N \sim \text{Binomial}(n = 42, p = 0.85) \). We calculate \( P(N < 35) \) using a Normal approximation for the Binomial distribution since \(n\) is large.
+
+#### Normal Approximation:
+For \( N \sim \text{Binomial}(n = 42, p = 0.85) \), the mean and standard deviation are:
+\[
+\mu = n \cdot p = 42 \cdot 0.85 = 35.7
+\]
+\[
+\sigma = \sqrt{n \cdot p \cdot (1 - p)} = \sqrt{42 \cdot 0.85 \cdot 0.15} \approx \sqrt{5.355} \approx 2.31
+\]
+
+Using the Normal approximation with continuity correction:
+\[
+P(N < 35) \approx P\left(Z < \frac{34.5 - \mu}{\sigma}\right) = P\left(Z < \frac{34.5 - 35.7}{2.31}\right)
+\]
+\[
+P(N < 35) \approx P\left(Z < -0.52\right)
+\]
+
+From standard normal tables:
+\[
+P(Z < -0.52) \approx 0.3015
+\]
+
+Thus, the probability that fewer than 35 guests show up is approximately:
+\[
+P(N < 35) \approx 0.3015 \, \text{or } 30.15\%.
+\]
+
+---
+
+### Final Results:
+(a) Probability that fewer than 35 people show up with 35 reservations: \( \approx 98.39\% \).
+
+(b) Number of reservations required: **42**.
+
+(c) Probability that fewer than 35 people show up with 42 reservations: \( \approx 30.15\% \).
+
+4. 2-21
+5. 2-26
+6. 4-10
+7. 5-6
+8. 5-15
+9. 6-5
+10. 5-11
+11. 7-3
+12. 6-2

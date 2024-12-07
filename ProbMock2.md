@@ -39,5 +39,51 @@ In their research, James and Emma tested 200 rabbits that received the supplemen
 
 (c) Assuming \(p\) is accurate, calculate the probability that at least 25 rabbits in the new group show significant improvement.
 
----
+### Problem 3:
 
+A prestigious private event hall has seating for 35 guests. Reservations are mandatory, and attendees are expected to adhere to a formal dress code. It is known that 15% of reservations are either canceled or result in no-shows. You may assume that all reservations are independent.
+
+Let \( N \) represent the variable: **number of guests who actually show up at the event**.
+
+### Tasks:
+(a) If exactly 35 people made reservations, what is the probability that fewer than 35 of them show up?
+
+(b) How many reservations should the hall accept to ensure the **expected number of attendees** equals 35?
+
+(c) Using the number of reservations found in (b), recalculate the probability that fewer than 35 people show up.
+
+### Problem 4:
+
+![image](https://github.com/user-attachments/assets/15f24261-2b16-4aef-801f-e064d76a0ddd)
+
+### Problem 5:
+
+![image](https://github.com/user-attachments/assets/8299a076-4442-4023-b3ac-f90f99d80784)
+
+### Problem 6:
+
+![image](https://github.com/user-attachments/assets/55c421fe-3a88-4450-91f9-fec5879788af)
+
+### Problem 7:
+
+![image](https://github.com/user-attachments/assets/857109a8-432c-4c62-926c-a6055ab8c8b9)
+
+### Problem 8:
+
+![image](https://github.com/user-attachments/assets/8facf8d2-41fc-4aa7-adb1-8ad4cd4e6c92)
+
+### Problem 9:
+
+![image](https://github.com/user-attachments/assets/ceb5f17b-e4de-400e-8cb3-0b5167794ab3)
+
+### Problem 10
+
+![image](https://github.com/user-attachments/assets/e1a14f0f-fb0b-46ce-a880-81a92484910d)
+
+### Problem 11
+
+![image](https://github.com/user-attachments/assets/d0f1a17f-60d3-4374-b651-af05334c95ff)
+
+### Problem 12
+
+![image](https://github.com/user-attachments/assets/f813d2d5-cce7-4686-8b71-a5065dc8ef17)

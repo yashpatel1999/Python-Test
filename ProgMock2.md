@@ -425,3 +425,354 @@ for x in range(3):
 ```
 
 ---
+
+
+### **Question 7**
+
+What will be the output of the following code?
+
+```python
+my_list = [10, 20, 30, 40]
+for i in range(len(my_list)):
+    if my_list[i] % 20 == 0:
+        my_list.append(my_list[i] // 10)
+my_list.reverse()
+while len(my_list) > 3:
+    my_list.pop()
+print(my_list)
+```
+
+---
+
+### **Question 8**
+
+What will be the output of the following code?
+
+```python
+lst1 = [5, 10, 15]
+lst2 = [20, 25]
+i = 0
+while i < len(lst1):
+    lst1.extend(lst2)
+    i += 1
+    if i == 2:
+        lst2 = [30, 35]
+print(lst1)
+```
+
+---
+
+---
+
+### **Question 9**
+
+What will be the output of the following code?
+
+```python
+my_dict = {'a': [1, 2], 'b': [3, 4], 'c': [5, 6]}
+for key, value in my_dict.items():
+    if len(value) == 2:
+        value.pop()
+        my_dict[key] = value
+my_dict['d'] = [7, 8]
+my_dict.clear()
+while 'a' not in my_dict:
+    my_dict['a'] = [9, 10]
+print(my_dict)
+```
+
+---
+
+### **Question 10**
+
+What will be the output of the following code?
+
+```python
+my_dict = {'x': [1, 2], 'y': [3, 4]}
+keys = ['x', 'y', 'z']
+i = 0
+while i < len(keys):
+    if keys[i] in my_dict:
+        my_dict[keys[i]].append(i)
+    else:
+        my_dict[keys[i]] = [i]
+    i += 1
+    if i == 2:
+        my_dict.update({'z': [6, 7]})
+print(my_dict)
+```
+
+
+### **Question 11**
+
+What will be the output of the following code?
+
+```python
+lst = [1, 2, 3, 4, 5, 6]
+for i in range(len(lst)):
+    if i % 2 == 0:
+        lst[i] *= 2
+    elif lst[i] % 2 == 0:
+        lst[i] += 3
+    else:
+        lst[i] -= 1
+print(lst)
+```
+
+---
+
+### **Question 12**
+
+What will be the output of the following code?
+
+```python
+my_dict = {'x': 5, 'y': 10, 'z': 15}
+for key in my_dict:
+    my_dict[key] = my_dict[key] * 2 if key != 'y' else my_dict[key] - 2
+    if key == 'z':
+        my_dict[key] += my_dict['y']
+print(my_dict)
+```
+
+---
+
+### **Question 13**
+
+What will be the output of the following code?
+
+```python
+s = "hello"
+lst = [1, 2, 3, 4, 5]
+result = ""
+for i in range(len(s)):
+    result += s[i].upper() if i % 2 == 0 else s[i]
+    if i < len(lst):
+        result += str(lst[i] * 2)
+print(result)
+```
+
+---
+
+### **Question 14**
+
+What will be the output of the following code?
+
+```python
+lst = [3, 7, 9, 5]
+for i in range(len(lst)):
+    if lst[i] % 2 == 1:
+        lst[i] += 3
+    for j in range(i, len(lst)):
+        lst[j] *= 2
+print(lst)
+```
+
+---
+
+### **Question 15**
+
+What will be the output of the following code?
+
+```python
+lst = [2, 4, 6, 8]
+for i in range(len(lst)):
+    for j in range(i, len(lst)):
+        lst[i] += lst[j] if i != j else 0
+    if lst[i] % 2 == 0:
+        lst[i] = lst[i] // 2
+    else:
+        lst[i] = lst[i] * 2
+print(lst)
+```
+
+
+## PART - C
+
+---
+
+### **Question 1**
+
+Write a Python program that performs the following tasks:
+
+1. **Convert a decimal number to binary:**
+   - Given a decimal number, convert it into its binary representation (without using Python's built-in `bin()` function).
+
+2. **Calculate the Chi-square statistic:**
+   - Given two lists: one representing the **observed frequencies** and the other representing the **expected frequencies**, calculate the **Chi-square statistic** using the formula:
+
+    ![image](https://github.com/user-attachments/assets/4840a1d0-bdf5-4550-9e14-8dd4ca510c7a)
+
+     Where:
+     - \( O_i \) is the observed frequency for the \(i\)-th event.
+     - \( E_i \) is the expected frequency for the \(i\)-th event.
+
+### **Example:**
+
+1. For the **binary conversion**, given the number `42`, the program should output `101010`.
+2. For the **Chi-square calculation**, given:
+   - Observed frequencies: `[20, 30, 50]`
+   - Expected frequencies: `[25, 25, 50]`
+   
+   The program should output the calculated Chi-square statistic.
+
+### **Expected Output:**
+
+- For the binary conversion (input: `42`):  
+  Output: `101010`
+  
+- For the Chi-square calculation (input: `observed=[20, 30, 50]`, `expected=[25, 25, 50]`):  
+  Output: `1.0`
+
+---
+
+### **Guidelines:**
+
+- Use a loop to manually convert the decimal number to binary.
+- Use a loop to calculate the Chi-square statistic by iterating through both the **observed** and **expected** lists.
+
+Sure! Here’s the **programming question** based on Fibonacci, factorial, and matrix:
+
+---
+
+### **Question 2**
+
+In the magical kingdom of **Algebraia**, there are three mystical puzzles that the wizard must solve to unlock the secrets of the universe. Your task is to help the wizard solve these puzzles by writing a Python program.
+
+#### **Puzzle 1: Fibonacci Series and Matrix Combination**
+
+The Fibonacci sequence holds a significant role in Algebraia. For this puzzle, you are given a number **n**, and your task is to calculate the **n-th Fibonacci number** and then **square it**.
+
+**Task:**
+- Write a function that calculates the **n-th Fibonacci number** and returns its square.
+
+#### **Puzzle 2: Factorial Calculation**
+
+The second puzzle is about calculating the **factorial** of a number. The wizard gives you a number **m**, and you need to calculate its factorial. This factorial will be used in the final matrix puzzle.
+
+**Task:**
+- Write a function to calculate the **factorial** of a given number **m**.
+
+#### **Puzzle 3: Matrix Transformation**
+
+In the final puzzle, you are provided with a **2x2 matrix**. Using the results of Puzzle 1 (the squared Fibonacci number) and Puzzle 2 (the factorial), you need to transform the matrix by:
+1. Multiplying each element of the matrix by the squared Fibonacci number.
+2. Adding the factorial result to each element of the matrix.
+
+**Task:**
+- Write a function that takes a **2x2 matrix**, multiplies each element by the squared Fibonacci number, and adds the factorial value to each element of the matrix.
+- Return the transformed matrix.
+
+### **Input:**
+- A number **n** (n ≥ 1) for the Fibonacci series.
+- A number **m** (m ≥ 1) for the factorial.
+- A **2x2 matrix** represented as a list of lists.
+
+### **Output:**
+- The transformed **2x2 matrix**.
+
+---
+
+**Example:**
+
+For **n = 6** and **m = 4**, the Fibonacci number is **8**, its square is **64**, and the factorial of 4 is **24**. If the matrix is:
+
+```
+A = [[1, 2],
+     [3, 4]]
+```
+
+Then the transformed matrix should be:
+
+```
+[[64 + 24, 128 + 24],
+ [192 + 24, 256 + 24]]
+```
+
+
+### **Question 3**
+
+In the ancient library of **Mathematica**, there is a scroll containing the most powerful formulas for calculating values in both **trigonometry** and **calculus**. The wizard has given you the following two challenges to solve:
+
+#### **Challenge 1: Trigonometric Transformation**
+
+The wizard wants to calculate the value of a trigonometric expression involving both **sine** and **cosine**. Given an angle **θ** in degrees, you need to calculate and return the result of the following expression:
+
+![image](https://github.com/user-attachments/assets/60e965af-73ce-408e-b939-1ee7685869cc)
+
+
+This formula is a fundamental identity in trigonometry known as the **Pythagorean Identity**.
+
+**Task:**
+- Write a function that accepts an angle **θ** (in degrees), converts it to radians, and then computes the result of the trigonometric identity **sin²(θ) + cos²(θ)**.
+
+#### **Challenge 2: Calculus Integration (Manual Integration)**
+
+The second challenge involves integrating a function. The wizard has given you a simple function to integrate: 
+
+![image](https://github.com/user-attachments/assets/8457b84b-e8ed-4b1a-8013-48d9358a1c0c)
+
+
+You need to compute the **definite integral** of this function between **a** and **b**, where **a** and **b** are the limits of integration provided by the wizard. The result of the integration will help the wizard understand the total area under the curve of the function between these two limits.
+
+**Task:**
+- Write a function that computes the definite integral of the function \( f(x) = x^2 + 3x + 2 \) manually using the **trapezoidal rule** for numerical integration. You should divide the interval [a, b] into smaller segments and approximate the area under the curve by calculating the sum of the areas of trapezoids.
+
+### **Input:**
+1. A floating-point number **θ** (angle in degrees) for the trigonometric calculation.
+2. Two floating-point numbers **a** and **b** for the limits of integration.
+
+### **Output:**
+1. The result of the trigonometric identity **sin²(θ) + cos²(θ)**.
+2. The value of the definite integral for the function \( f(x) = x^2 + 3x + 2 \) between **a** and **b** using the trapezoidal rule.
+
+---
+
+### **Example:**
+
+#### **Example 1:**
+
+**Input:**
+```
+θ = 45
+```
+
+**Output:**
+```
+Trigonometric Identity Result: 1.0
+```
+
+#### **Example 2:**
+
+**Input:**
+```
+a = 0
+b = 2
+```
+
+**Output:**
+```
+Definite Integral Result: 10.666666666666666
+```
+
+---
+
+### **Program Requirements:**
+1. Use the `math` module for trigonometric calculations.
+2. Use the **trapezoidal rule** for the numerical integration to calculate the area under the curve.
+
+---
+
+### **Hints:**
+- For the trigonometric calculation, you’ll need to convert **θ** from degrees to radians
+
+![image](https://github.com/user-attachments/assets/61acdea9-8c74-41ed-a57c-656435d658c8)
+
+- For the integration, the trapezoidal rule is calculated by approximating the integral as the sum of the areas of trapezoids:
+
+  ![image](https://github.com/user-attachments/assets/634ada41-1484-477b-b658-440076595874)
+
+  where \( x_i \) are the points between **a** and **b**.
+
+
+
+

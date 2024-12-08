@@ -1,4 +1,4 @@
-Here are 20 tricky multiple-choice questions (MCQs) on Python programming:
+## PART A
 
 1. **Which of the following is the output of the following code?**
    ```python

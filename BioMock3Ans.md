@@ -64,3 +64,14 @@
 **64.** a. 9:3:3:1
 **65.** a. All males will be color-blind, and all females will be normal.  
 **66.** e. Blood type A, B, AB, or O
+**67.** d. The quaternary structure of a protein involves the interaction between multiple folded polypeptide chains.
+
+**68.** b. An α-helix is a coil, while a β-pleated sheet forms a zigzag pattern.
+
+**69.** c. Hydrogen bonds help stabilize the tertiary structure by holding different parts of the protein together.
+
+**70.** d. The two strands of DNA are oriented in opposite directions, with one running 5’ to 3’ and the other running 3’ to 5’.
+
+**71.** a. RNA contains ribose, while DNA contains deoxyribose.
+
+**72.** a. Ester bond

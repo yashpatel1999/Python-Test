@@ -506,3 +506,46 @@ d. Blood type B, AB, or O
 e. Blood type A, B, AB, or O  
 
 ---
+Here are six questions based on different structures:
+
+**67.** Which of the following statements about protein structure is correct?  
+a. The primary structure of a protein is determined by the folding of its polypeptide chain into a three-dimensional shape.  
+b. The secondary structure of a protein refers to the overall three-dimensional shape formed by multiple polypeptide chains.  
+c. The tertiary structure of a protein involves the sequence of amino acids in the polypeptide chain.  
+d. The quaternary structure of a protein involves the interaction between multiple folded polypeptide chains.  
+e. The primary structure of a protein is stabilized by hydrogen bonds between amino acids.
+
+**68.** What is the main difference between an α-helix and a β-pleated sheet in protein secondary structure?  
+a. Both are stabilized by ionic bonds.  
+b. An α-helix is a coil, while a β-pleated sheet forms a zigzag pattern.  
+c. α-helixes are composed of parallel chains, while β-pleated sheets are composed of anti-parallel chains.  
+d. An α-helix is a rigid structure, while β-pleated sheets are flexible.  
+e. Both structures are stabilized by peptide bonds between amino acids.
+
+**69.** Which of the following best describes the role of hydrogen bonds in protein folding?  
+a. Hydrogen bonds stabilize the primary structure by connecting amino acid side chains.  
+b. Hydrogen bonds are primarily involved in maintaining the quaternary structure of proteins.  
+c. Hydrogen bonds help stabilize the tertiary structure by holding different parts of the protein together.  
+d. Hydrogen bonds are important for stabilizing the β-pleated sheets in the secondary structure only.  
+e. Hydrogen bonds are involved in peptide bond formation in the primary structure.
+
+**70.** In the context of DNA structure, which of the following statements is true regarding the double helix?  
+a. The two strands of DNA run parallel to each other.  
+b. The nitrogenous bases in DNA are held together by covalent bonds.  
+c. Adenine pairs with cytosine, and guanine pairs with thymine.  
+d. The two strands of DNA are oriented in opposite directions, with one running 5’ to 3’ and the other running 3’ to 5’.  
+e. The sugar-phosphate backbone is made up of purines and pyrimidines.
+
+**71.** What is the key structural difference between RNA and DNA?  
+a. RNA contains ribose, while DNA contains deoxyribose.  
+b. RNA is double-stranded, while DNA is single-stranded.  
+c. RNA contains uracil, while DNA contains thymine.  
+d. RNA contains thymine, while DNA contains uracil.  
+e. RNA lacks a sugar-phosphate backbone, unlike DNA.
+
+**72.** In a typical triglyceride molecule, which of the following best describes the bond between the glycerol backbone and the fatty acids?  
+a. Ester bond  
+b. Peptide bond  
+c. Hydrogen bond  
+d. Phosphodiester bond  
+e. Ionic bond
